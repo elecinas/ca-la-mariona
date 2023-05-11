@@ -1,60 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CaLaMariona</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-  <header>
-    <div class="header-menu-1">
-      <p class="logo">CaLaMariona</p>
-      <div class="links">
-        <p><a href="#">Accés socis</a></p>
-        <p><a href="#">Cistella</a></p>
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Esther Lecina" />
+    <meta
+      name="description"
+      content="La cooperativa CaLaMariona, ubicada en Cerdanyola del Vallés, ofrece soporte a todos sus socios además de productos ecológicos y de proximidad a todos sus compradores."
+    />
+    <title>CaLaMariona</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./scripts/script.js" defer></script>
+    <!-- Fonts google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Titillium+Web:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-menu-1">
+        <p class="logo">CaLaMariona</p>
+        <div class="links">
+          <p><a href="#">Accés socis</a></p>
+          <p><a href="#">Cistella</a></p>
+        </div>
       </div>
-    </div>
-    <div class="header-menu-2">
-      <ul>
-        <li>Cooperativa</li>
-        <li>Socis</li>
-        <li>Productes</li>
-        <li>Contacte</li>
-        <li>Actualitat</li>
-      </ul>
-    </div>
-  </header>
-  <div class="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-img-wrapper">
-        <img
-          src="https://www.10wallpaper.com/wallpaper/1366x768/1704/Germany_landscape-Windows_10_system_HD_wallpaper_08_1366x768.jpg"
-          alt="Imagen 1" class="carousel-item active">
-      </div>
-      <div class="carousel-img-wrapper">
-        <img src="https://www.tuexperto.com/wp-content/uploads/2017/10/fondo-de-pantalla-paisaje.jpg" alt="Imagen 2"
-          class="carousel-item">
-      </div>
-      <div class="carousel-img-wrapper">
-        <img src="https://fondosmil.com/fondo/11564.jpg" alt="Imagen 3" class="carousel-item">
-      </div>
+      <nav class="header-menu-2">
+        <ul>
+          <li>Cooperativa</li>
+          <li>Socis</li>
+          <li>Productes</li>
+          <li>Contacte</li>
+          <li>Actualitat</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-img-wrapper">
+            <img
+              src="https://www.10wallpaper.com/wallpaper/1366x768/1704/Germany_landscape-Windows_10_system_HD_wallpaper_08_1366x768.jpg"
+              alt="Imagen 1"
+              class="carousel-item active"
+            />
+          </div>
+          <div class="carousel-img-wrapper">
+            <img
+              src="https://www.tuexperto.com/wp-content/uploads/2017/10/fondo-de-pantalla-paisaje.jpg"
+              alt="Imagen 2"
+              class="carousel-item"
+            />
+          </div>
+          <div class="carousel-img-wrapper">
+            <img
+              src="https://fondosmil.com/fondo/11564.jpg"
+              alt="Imagen 3"
+              class="carousel-item"
+            />
+          </div>
+        </div>
+        <a
+          class="carousel-control prev"
+          href="#carousel"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a
+          class="carousel-control next"
+          href="#carousel"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-icon" aria-hidden="true"></span>
+          <span class="sr-only">Siguiente</span>
+        </a>
+      </section>
+    </main>
+    <footer>
+      <address>
+        <p>
+          Chris Mills<br />
+          Manchester<br />
+          The Grim North<br />
+          Reino Unido
+        </p>
 
-    </div>
-    <a class="carousel-control prev" href="#carousel" role="button" data-slide="prev">
-      <span class="carousel-control-icon" aria-hidden="true"></span>
-      <span class="sr-only">Anterior</span>
-    </a>
-    <a class="carousel-control next" href="#carousel" role="button" data-slide="next">
-      <span class="carousel-control-icon" aria-hidden="true"></span>
-      <span class="sr-only">Siguiente</span>
-    </a>
-  </div>
-
-  <script src="./script.js"></script>
-</body>
-
+        <ul>
+          <li>Tel: 01234 567 890</li>
+          <li>Email: me@grim-north.co.uk</li>
+        </ul>
+      </address>
+      <time datetime="2016-01-20">20 Enero 2016</time>
+    </footer>
+  </body>
 </html>
