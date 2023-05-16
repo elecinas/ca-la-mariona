@@ -20,47 +20,80 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Titillium+Web:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+    <!-- Fonts awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
     <header>
       <div class="header-menu-1">
-        <p class="logo">CaLaMariona</p>
-        <div class="links">
-          <p><a href="#">Accés socis</a></p>
-          <p><a href="#">Cistella</a></p>
+        <div class="direct-access">
+          <div>
+            <a href="#"><i class="fa-solid fa-user"></i> Acceso socios</a>
+          </div>
+          <div>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i> Cesta</a>
+          </div>
+        </div>
+        <div class="logo-container">
+          <img
+            class="logo"
+            src="./images/logo.svg"
+            alt="logotipo CaLaMariona"
+          />
+        </div>
+        <div class="hamburger">
+          <a href="#" onclick="showMenu()"><i class="fa-solid fa-bars"></i></a>
         </div>
       </div>
-      <nav class="header-menu-2">
+      <nav id="menu" class="header-menu-2">
         <ul>
-          <li>Cooperativa</li>
-          <li>Socis</li>
-          <li>Productes</li>
-          <li>Contacte</li>
-          <li>Actualitat</li>
+          <li><a href="#">Cooperativa</a></li>
+          <li><a href="#">Socis</a></li>
+          <li><a href="#">Productes</a></li>
+          <li><a href="#">Contacte</a></li>
+          <li><a href="#">Actualitat</a></li>
         </ul>
       </nav>
+      <div class="redes">
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
     </header>
     <main>
       <section class="carousel">
         <div class="carousel-inner">
-          <div class="carousel-img-wrapper">
+          <div class="carousel-wrapper">
+            <div class="carousel-slide-information">
+              <h3>Ramón Bilbao</h3>
+              <p>CaLaMariona me ayudó a conseguir mi sueño.</p>
+              <a href="#" class="primary-button">Conoce a nuestros socios</a>
+            </div>
+            <div class="shadow-cover"></div>
             <img
-              src="https://www.10wallpaper.com/wallpaper/1366x768/1704/Germany_landscape-Windows_10_system_HD_wallpaper_08_1366x768.jpg"
-              alt="Imagen 1"
+              id="imgCarousel1"
+              src="./images/hero_img_ramon_xs.jpg"
+              alt="Ramón Bilbao feliz con su cosecha"
               class="carousel-item active"
             />
           </div>
-          <div class="carousel-img-wrapper">
+          <div class="carousel-wrapper">
+            <div class="carousel-slide-information">
+              <h3>La Cooperativa</h3>
+              <p>
+                Alimentos saludables y sostenibles a precios justos. Únete a
+                nosotros.
+              </p>
+              <a href="#" class="primary-button">Conoce CaLaMariona</a>
+            </div>
+            <div class="shadow-cover"></div>
             <img
-              src="https://www.tuexperto.com/wp-content/uploads/2017/10/fondo-de-pantalla-paisaje.jpg"
-              alt="Imagen 2"
-              class="carousel-item"
-            />
-          </div>
-          <div class="carousel-img-wrapper">
-            <img
-              src="https://fondosmil.com/fondo/11564.jpg"
-              alt="Imagen 3"
+              id="imgCarousel2"
+              src="./images/hero_img_cucumbers_xs.jpg"
+              alt="Los primeros calabacines de la temporada"
               class="carousel-item"
             />
           </div>
@@ -71,8 +104,9 @@
           role="button"
           data-slide="prev"
         >
-          <span class="carousel-control-icon" aria-hidden="true"></span>
-          <span class="sr-only">Anterior</span>
+          <span class="carousel-control-icon" aria-hidden="true"
+            ><i class="fa-solid fa-chevron-left"></i
+          ></span>
         </a>
         <a
           class="carousel-control next"
@@ -80,12 +114,79 @@
           role="button"
           data-slide="next"
         >
-          <span class="carousel-control-icon" aria-hidden="true"></span>
-          <span class="sr-only">Siguiente</span>
+          <span class="carousel-control-icon" aria-hidden="true"
+            ><i class="fa-solid fa-chevron-right"></i
+          ></span>
         </a>
       </section>
+      <section class="white-section">
+        <h2 class="section-title">Nuestros socios</h2>
+        <p class="section-text">
+          Estos son algunos de los socios comprometidos con la cooperativa de
+          productores de alientos del barrio.
+        </p>
+        <div class="card-slider">
+          <div class="card">
+            <img
+              src="./images/card_01.jpg"
+              alt="Maria Antònia en su herbolistería"
+            />
+            <div class="card-info">
+              <h4>Maria Antònia Romeu Vilaspasa</h4>
+              <p>"Gracias a CaLaMariona ahora tengo acceso a los mejores...</p>
+              <a href="#" class="cta">Leer más</a>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="./images/card_02.jpg"
+              alt="Maria Antònia en su herbolistería"
+            />
+            <div class="card-info">
+              <h4>Pere Pons Fontdevila</h4>
+              <p>"Gracias a CaLaMariona ahora tengo acceso a los mejores...</p>
+              <a href="#" class="cta">Leer más</a>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="./images/card_03.jpg"
+              alt="Maria Antònia en su herbolistería"
+            />
+            <div class="card-info">
+              <h4>Oliver Fernández Rodríguez</h4>
+              <p>"Gracias a CaLaMariona ahora tengo acceso a los mejores...</p>
+              <a href="#" class="cta">Leer más</a>
+            </div>
+          </div>
+
+          <a class="" href="#" role="button">
+            <span class="carousel-control-icon" aria-hidden="true"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></span>
+          </a>
+          <a class="" href="#" role="button">
+            <span class="carousel-control-icon" aria-hidden="true"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></span>
+          </a>
+        </div>
+        <a href="#" class="secondary-button">Conoce a nuestros socios</a>
+      </section>
+      <section class="brown-section">
+        <div class="brown-inner-section">
+          <div class="content-wrapper">
+            <h2 class="section-title">Nuestros productos</h2>
+            <p class="section-text">
+              Nuestros productos son frescos, saludables y sostenibles. Ofrecemos una amplia variedad de frutas y verduras, carnes y productos lácteos, cuidadosamente cultivados y elaborados por pequeños agricultores y productores independientes comprometidos con la calidad y la comunidad.
+            </p>
+            <a href="#" class="primary-button">Descúbrelos</a>
+          </div>
+          <div class="img-wrapper"></div>
+        </div>
+      </section>
     </main>
-    <footer>
+    <!-- <footer>
       <address>
         <p>
           Chris Mills<br />
@@ -100,6 +201,6 @@
         </ul>
       </address>
       <time datetime="2016-01-20">20 Enero 2016</time>
-    </footer>
+    </footer> -->
   </body>
 </html>
