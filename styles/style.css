@@ -117,14 +117,16 @@ a {
 
 .section-title {
   font-size: 32px;
+  line-height: 35px;
   color: var(--primary-color);
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 .section-text {
   text-align: center;
   max-width: 580px;
-  margin: 0 auto;
+  margin: 0 auto 39px auto;
 }
 
 .white-section > .secondary-button {
@@ -330,7 +332,6 @@ header {
 /* CARD SLIDER */
 
 .card-slider {
-  margin-top: 39px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -371,6 +372,45 @@ header {
   font-size: 24px;
   line-height: 27px;
   color: var(--primary-color);
+}
+
+/* THUMBNAIL SLIDER */
+
+.thumbnail-slider {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumbnail {
+  width: 136px;
+  height: 136px;
+  background-color: var(--accent-color-1);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.thumbnail > * {
+  color: #fff;
+}
+
+.thumbnail h6 {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.thumbnail-slider > div:nth-child(2) {
+  background-color: #8AA091;
+}
+.thumbnail-slider > div:nth-child(3) {
+  background-color: var(--secondary-color-40);
+}
+.thumbnail-slider > div:nth-child(4) {
+  background-color: var(--secondary-color);
 }
 
 /* Estilos para tablet */
@@ -427,6 +467,10 @@ header {
 
   .white-section > .secondary-button {
     margin: 75px auto 0px auto;
+  }
+
+  .section-text {
+    margin-bottom: 75px;
   }
 
   /* HEADER */
@@ -522,7 +566,6 @@ header {
 
   /* CARD SLIDER */
   .card-slider {
-    margin-top: 75px;
     flex-direction: row;
   }
   .card-slider > div:nth-child(2),
@@ -532,6 +575,29 @@ header {
 
   .card {
     width: 285px;
+  }
+
+  /* THUMBNAIL SLIDER */
+  
+  .thumbnail-slider {
+    /* display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center; */
+    gap: 1.5rem;
+  }
+  
+  .thumbnail {
+    width: 208px;
+    height: 208px;
+  }
+
+  .thumbnail h6 {
+    font-size: 26px;
+    line-height: 28px;
+    display: block;
+    flex-basis: 50%;
   }
 }
 
