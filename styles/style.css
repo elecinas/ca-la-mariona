@@ -136,7 +136,9 @@ a {
 /* HEADER */
 
 header {
-  position: relative;
+  position: sticky; 
+  top: 0;
+  z-index: 100;
 }
 
 .header-menu-1 {
@@ -413,6 +415,14 @@ header {
   background-color: var(--secondary-color);
 }
 
+/* FOOTER */
+
+footer {
+  background-color: var(--primary-color);
+  padding: 1rem;
+  color: #fff;
+}
+
 /* Estilos para tablet */
 @media (min-width: 768px) {
   .white-section {
@@ -515,7 +525,7 @@ header {
   }
 
   .header-menu-2 ul {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     justify-content: space-between;
     align-items: center;
