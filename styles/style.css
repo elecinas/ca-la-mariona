@@ -100,7 +100,7 @@ a {
 }
 
 .brown-section .section-title {
- color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 .brown-section .primary-button {
@@ -130,14 +130,14 @@ a {
   margin: 0 auto 39px auto;
 }
 
-.white-section > .secondary-button {
+.white-section>.secondary-button {
   margin: 39px auto 0px auto;
 }
 
 /* HEADER */
 
 header {
-  position: sticky; 
+  position: sticky;
   top: 0;
   z-index: 100;
 }
@@ -151,7 +151,7 @@ header {
   align-items: center;
 }
 
-.header-menu-1 > * {
+.header-menu-1>* {
   min-height: 48px;
 }
 
@@ -170,6 +170,7 @@ header {
 .direct-access div:first-child {
   background-color: var(--secondary-color-40);
 }
+
 .direct-access div:last-child {
   background-color: var(--secondary-color-20);
 }
@@ -186,6 +187,7 @@ header {
 .hamburger {
   padding-right: 20px;
 }
+
 .hamburger a {
   color: #fff;
   font-size: 2rem;
@@ -199,6 +201,11 @@ header {
   position: absolute;
   top: 96px;
   width: 100%;
+}
+
+.header-menu-2 i {
+  font-size: .7rem;
+  font-weight: bolder;
 }
 
 .shown {
@@ -234,9 +241,16 @@ header {
   mix-blend-mode: difference;
 }
 
-/* CAROUSEL */
+/* CAROUSEL AND HERO */
 
-.carousel {
+.hero {
+  background-image: url("../images/hero_img_socis_xs.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.carousel,
+.hero {
   width: 100%;
   height: calc(100vh - 96px);
   overflow: hidden;
@@ -256,7 +270,8 @@ header {
   height: 100vh;
 }
 
-.carousel-slide-information {
+.carousel-slide-information,
+.hero-information {
   position: absolute;
   z-index: 6;
   width: 85vw;
@@ -271,13 +286,16 @@ header {
 }
 
 .carousel-slide-information h3,
-.carousel-slide-information p {
+.carousel-slide-information p,
+.hero-information h3,
+.hero-information p {
   color: #fff;
   text-align: center;
   text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.75);
 }
 
-.carousel-slide-information h3 {
+.carousel-slide-information h3,
+.hero-information h3 {
   font-weight: bold;
   font-size: 32px;
   line-height: 36px;
@@ -336,18 +354,18 @@ header {
   position: relative;
 }
 
-.card-slider > div:nth-child(2),
-.card-slider > div:nth-child(3) {
+.card-slider>div:nth-child(2),
+.card-slider>div:nth-child(3) {
   display: none;
 }
 
-.card-slider > a {
+.card-slider>a {
   display: block;
   position: absolute;
   top: 50%;
 }
 
-.card-slider > a:last-child {
+.card-slider>a:last-child {
   right: 0px;
 }
 
@@ -373,6 +391,12 @@ header {
   color: var(--primary-color);
 }
 
+/* CARD GRID */
+
+.card-grid>* {
+  margin: 3rem auto;
+}
+
 /* THUMBNAIL SLIDER */
 
 .thumbnail-slider {
@@ -393,7 +417,7 @@ header {
   justify-content: space-between;
 }
 
-.thumbnail > * {
+.thumbnail>* {
   color: #fff;
 }
 
@@ -402,13 +426,15 @@ header {
   line-height: 20px;
 }
 
-.thumbnail-slider > div:nth-child(2) {
-  background-color: #8AA091;
+.thumbnail-slider>div:nth-child(2) {
+  background-color: #8aa091;
 }
-.thumbnail-slider > div:nth-child(3) {
+
+.thumbnail-slider>div:nth-child(3) {
   background-color: var(--secondary-color-40);
 }
-.thumbnail-slider > div:nth-child(4) {
+
+.thumbnail-slider>div:nth-child(4) {
   background-color: var(--secondary-color);
 }
 
@@ -424,7 +450,7 @@ footer {
   gap: 6rem;
 }
 
-footer > * {
+footer>* {
   margin: auto;
 }
 
@@ -480,7 +506,7 @@ footer a {
     display: none;
   }
 
-  .brown-section .brown-inner-section{
+  .brown-section .brown-inner-section {
     max-width: 980px;
     margin: 0 auto;
     min-height: 500px;
@@ -503,7 +529,7 @@ footer a {
     margin-top: 1rem;
   }
 
-  .white-section > .secondary-button {
+  .white-section>.secondary-button {
     margin: 75px auto 0px auto;
   }
 
@@ -581,16 +607,24 @@ footer a {
 
   /* CAROUSEL */
 
+
+  .hero {
+    background-image: url("../images/hero_img_socis_xl.jpg");
+  }
+
   .carousel {
     height: calc(100vh - 127px);
   }
 
   .carousel-slide-information h3,
-  .carousel-slide-information p {
+  .carousel-slide-information p,
+  .hero-information h3,
+  .hero-information p {
     text-align: left;
   }
 
-  .carousel-slide-information {
+  .carousel-slide-information,
+  .hero-information {
     width: 25vw;
     min-width: 200px;
     top: 50%;
@@ -606,8 +640,9 @@ footer a {
   .card-slider {
     flex-direction: row;
   }
-  .card-slider > div:nth-child(2),
-  .card-slider > div:nth-child(3) {
+
+  .card-slider>div:nth-child(2),
+  .card-slider>div:nth-child(3) {
     display: block;
   }
 
@@ -615,17 +650,19 @@ footer a {
     width: 285px;
   }
 
-  /* THUMBNAIL SLIDER */
-  
-  .thumbnail-slider {
-    /* display: flex;
+  /* CARD GRID */
+
+  .card-grid {
+    display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center; */
+  }
+
+  /* THUMBNAIL SLIDER */
+
+  .thumbnail-slider {
     gap: 1.5rem;
   }
-  
+
   .thumbnail {
     width: 208px;
     height: 208px;
@@ -639,6 +676,11 @@ footer a {
   }
 
   /* FOOTER */
+
+  footer {
+    padding-top: 2rem;
+  }
+
   footer .info {
     flex-direction: row;
     justify-content: space-around;

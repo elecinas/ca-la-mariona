@@ -13,6 +13,7 @@
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./styles/style.css" />
     <script src="./scripts/script.js" defer></script>
+    <script src="./scripts/carousel-scripts.js" defer></script>
     <!-- Fonts google -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -45,13 +46,13 @@
           />
         </div>
         <div class="hamburger">
-          <a href="#" onclick="showMenu()"><i class="fa-solid fa-bars"></i></a>
+          <a href="#" onclick="showMenu(document.getElementById('menu'))"><i class="fa-solid fa-bars"></i></a>
         </div>
       </div>
       <nav id="menu" class="header-menu-2">
         <ul>
-          <li><a href="#">Cooperativa</a></li>
-          <li><a href="#">Socis</a></li>
+          <li><a href="#">Cooperativa</a> <i class="fa-solid fa-chevron-up"></i></li>
+          <li><a href="./socis.html">Socis</a></li>
           <li><a href="#">Productes</a></li>
           <li><a href="#">Contacte</a></li>
           <li><a href="#">Actualitat</a></li>
@@ -70,7 +71,7 @@
             <div class="carousel-slide-information">
               <h3>Ramón Bilbao</h3>
               <p>CaLaMariona me ayudó a conseguir mi sueño.</p>
-              <a href="#" class="primary-button">Conoce a nuestros socios</a>
+              <a href="./socis.html" class="primary-button">Conoce a nuestros socios</a>
             </div>
             <div class="shadow-cover"></div>
             <img
@@ -140,22 +141,22 @@
           <div class="card">
             <img
               src="./images/card_02.jpg"
-              alt="Maria Antònia en su herbolistería"
+              alt="Pere en la carnicería del mercado de Cerdanyola"
             />
             <div class="card-info">
               <h4>Pere Pons Fontdevila</h4>
-              <p>"Gracias a CaLaMariona ahora tengo acceso a los mejores...</p>
+              <p>"Cuando conocí CaLaMariona no esperaba que...</p>
               <a href="#" class="cta">Leer más</a>
             </div>
           </div>
           <div class="card">
             <img
               src="./images/card_03.jpg"
-              alt="Maria Antònia en su herbolistería"
+              alt="Oliver atendiendo a su huerto"
             />
             <div class="card-info">
               <h4>Oliver Fernández Rodríguez</h4>
-              <p>"Gracias a CaLaMariona ahora tengo acceso a los mejores...</p>
+              <p>"Desde que pertenezco a CaLaMariona todo han sido facilidades...</p>
               <a href="#" class="cta">Leer más</a>
             </div>
           </div>
@@ -171,7 +172,7 @@
             ></span>
           </a>
         </div>
-        <a href="#" class="secondary-button">Conoce a nuestros socios</a>
+        <a href="./socis.html" class="secondary-button">Conoce a nuestros socios</a>
       </section>
       <section class="brown-section">
         <div class="brown-inner-section">
@@ -218,18 +219,20 @@
     </main>
     <footer>
       <div class="info">
-        <address>
+        <div>
           <h6>Información de contacto</h6>
-          <p>
-            Carrer de la font, 12<br />
-            Cerdanyola del Vallés<br />
-            08080 Barcelona
-          </p>
-          <ul>
-            <li>(+34) 909 909 090</li>
-            <li>contacta@calamariona.net</li>
-          </ul>
-        </address>
+          <address>
+            <p>
+              Carrer de la font, 12<br />
+              Cerdanyola del Vallés<br />
+              08080 Barcelona
+            </p>
+            <ul>
+              <li>(+34) 909 909 090</li>
+              <li>contacta@calamariona.net</li>
+            </ul>
+          </address>
+        </div>
         <div class="info-web">
           <h6>Información web</h6>
           <ul>

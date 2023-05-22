@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Esther Lecina" />
+    <meta
+      name="description"
+      content="La cooperativa CaLaMariona, ubicada en Cerdanyola del Vallés, ofrece soporte a todos sus socios además de productos ecológicos y de proximidad a todos sus compradores."
+    />
+    <title>Els socis de CaLaMariona</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./scripts/script.js" defer></script>
+    <!-- Fonts google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Titillium+Web:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fonts awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-menu-1">
+        <div class="direct-access">
+          <div>
+            <a href="#"><i class="fa-solid fa-user"></i> Acceso socios</a>
+          </div>
+          <div>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i> Cesta</a>
+          </div>
+        </div>
+        <div class="logo-container">
+          <img
+            class="logo"
+            src="./images/logo.svg"
+            alt="logotipo CaLaMariona"
+          />
+        </div>
+        <div class="hamburger">
+          <a href="#" onclick="showMenu(document.getElementById('menu'))"><i class="fa-solid fa-bars"></i></a>
+        </div>
+      </div>
+      <nav id="menu" class="header-menu-2">
+        <ul>
+          <li>
+            <a href="#">Cooperativa</a> <i class="fa-solid fa-chevron-up"></i>
+          </li>
+          <li><a href="#">Socis</a></li>
+          <li><a href="#">Productes</a></li>
+          <li><a href="#">Contacte</a></li>
+          <li><a href="#">Actualitat</a></li>
+        </ul>
+      </nav>
+      <div class="redes">
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-information">
+          <h3>Nuestros socios</h3>
+          <p>Cada uno de nosotros aporta su granito de arena a este valiente proyecto.</p>
+          <a href="#" class="primary-button">Únete a nosotros</a>
+        </div>
+        <div class="shadow-cover"></div>
+        <!-- <img
+          id="imgHeroSocis"
+          src="./images/hero_img_socis_xs.jpg"
+          alt="Ramón Bilbao feliz con su cosecha"
+          class="carousel-item active"
+        /> -->
+      </section>
+      <section class="white-section">
+        <h2 class="section-title">Nuestros socios</h2>
+        <p class="section-text">
+          Estos son algunos de los socios comprometidos con la cooperativa de
+          productores de alientos del barrio.
+        </p>
+        <div class="card-grid">
+          <div class="card">
+            <img
+              src="./images/card_01.jpg"
+              alt="Maria Antònia en su herbolistería"
+            />
+            <div class="card-info">
+              <h4>Maria Antònia Romeu Vilaspasa</h4>
+              <p>"Gracias a CaLaMariona ahora tengo acceso a los mejores...</p>
+              <a href="#" class="cta">Leer más</a>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="./images/card_02.jpg"
+              alt="Maria Antònia en su herbolistería"
+            />
+            <div class="card-info">
+              <h4>Pere Pons Fontdevila</h4>
+              <p>"Gracias a CaLaMariona ahora tengo acceso a los mejores...</p>
+              <a href="#" class="cta">Leer más</a>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="./images/card_03.jpg"
+              alt="Maria Antònia en su herbolistería"
+            />
+            <div class="card-info">
+              <h4>Oliver Fernández Rodríguez</h4>
+              <p>"Gracias a CaLaMariona ahora tengo acceso a los mejores...</p>
+              <a href="#" class="cta">Leer más</a>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="./images/card_04.jpg"
+              alt="Enric colocando el género en su tienda"
+            />
+            <div class="card-info">
+              <h4>Enric Bel Escadolles</h4>
+              <p>"Todos los socios de CaLaMariona no podríamos estar más...</p>
+              <a href="#" class="cta">Leer más</a>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="./images/card_05.jpg"
+              alt="Ramón sosteniendo feliz su cosecha"
+            />
+            <div class="card-info">
+              <h4>Ramón Bilbao Comí</h4>
+              <p>"CaLaMariona me ayudó a conseguir mi sueño, con ayuda...</p>
+              <a href="#" class="cta">Leer más</a>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="./images/card_06.jpg"
+              alt="Joana en el mostrador de su fleca"
+            />
+            <div class="card-info">
+              <h4>Joana Mercedes Uller</h4>
+              <p>"Todo es más fácil desde que CaLaMariona...</p>
+              <a href="#" class="cta">Leer más</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="info">
+        <div>
+          <h6>Información de contacto</h6>
+          <address>
+            <p>
+              Carrer de la font, 12<br />
+              Cerdanyola del Vallés<br />
+              08080 Barcelona
+            </p>
+            <ul>
+              <li>(+34) 909 909 090</li>
+              <li>contacta@calamariona.net</li>
+            </ul>
+          </address>
+        </div>
+        <div class="info-web">
+          <h6>Información web</h6>
+          <ul>
+            <li><a href="#">Aviso legal</a></li>
+            <li><a href="#">Proyecto web</a></li>
+            <li>
+              Última actualización
+              <time datetime="2023-05-19">19 de mayo de 2023</time>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <img class="logo" src="./images/logo.svg" alt="logotipo CaLaMariona" />
+      <div>
+        <div class="footer_redes">
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <p>Diseñado por CaLaMariona, 2023.</p>
+      </div>
+    </footer>
+  </body>
+</html>
