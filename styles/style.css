@@ -181,6 +181,7 @@ header {
 
 .logo-container {
   display: flex;
+  align-items: center;
   padding-left: 20px;
 }
 
@@ -227,6 +228,7 @@ header {
 }
 
 .logo {
+  margin-top: .2rem;
   width: 160px;
 }
 
@@ -304,7 +306,8 @@ header {
   line-height: 36px;
 }
 
-.carousel-slide-information .primary-button {
+.carousel-slide-information .primary-button,
+.hero-information .primary-button {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.75);
   margin: 0 auto;
 }
