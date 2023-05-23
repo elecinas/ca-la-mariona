@@ -204,8 +204,10 @@ header {
 }
 
 .header-menu-2 i {
-  font-size: .7rem;
+  font-size: .5rem;
   font-weight: bolder;
+  padding-top: .5rem;
+  padding-left: .5rem;
 }
 
 .shown {
@@ -219,7 +221,8 @@ header {
   border-top: 1px solid white;
 }
 
-.header-menu-2 ul li a {
+.header-menu-2 ul li a,
+.header-menu-2 ul li i {
   color: #fff;
 }
 
@@ -539,6 +542,12 @@ footer a {
 
   /* HEADER */
 
+  header {
+    position: relative;
+    top: unset;
+    z-index: unset;
+  }
+
   .header-menu-1 {
     min-height: 72px;
     align-items: center;
@@ -590,8 +599,15 @@ footer a {
     display: block;
   }
 
-  .header-menu-2 ul li a {
+  .header-menu-2 ul li a,
+  .header-menu-2 ul li i {
     color: #000;
+  }
+  
+  .header-menu-2 i {
+    font-size: .7rem;
+    padding-top: unset;
+    padding-left: unset;
   }
 
   .logo {
