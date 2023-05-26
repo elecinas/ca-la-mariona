@@ -40,14 +40,16 @@
         <div class="logo-container">
           <a href="./index.html">
             <img
-            class="logo"
-            src="./images/logo.svg"
-            alt="logotipo CaLaMariona"
-          />
+              class="logo"
+              src="./images/logo.svg"
+              alt="logotipo CaLaMariona"
+            />
           </a>
         </div>
         <div class="hamburger">
-          <a href="#" onclick="showMenu(document.getElementById('menu'))"><i class="fa-solid fa-bars"></i></a>
+          <a href="#" onclick="showMenu(document.getElementById('menu'))"
+            ><i class="fa-solid fa-bars"></i
+          ></a>
         </div>
       </div>
       <nav id="menu" class="header-menu-2">
@@ -68,11 +70,202 @@
       </div>
     </header>
     <main>
-      <section class="white-section">
+      <section class="white-section principal">
         <h1 class="page-title">Nuestros productos</h1>
-        <p class="section-text">
-            Ofrecemos alimentos frescos, saludables y sostenibles de pequeños productores locales comprometidos con la calidad y la comunidad.
+        <p class="page-text">
+          Ofrecemos alimentos frescos, saludables y sostenibles de pequeños
+          productores locales comprometidos con la calidad y la comunidad.
         </p>
+      </section>
+      <section class="products-container">
+        <aside class="products-nav">
+          <div class="search">
+            <input type="search" />
+          </div>
+          <div class="category">
+            <h6>Categoría</h6>
+            <ul>
+              <li><a href="#">Todos</a></li>
+              <li><a href="#">Lácteos</a></li>
+              <li><a href="#">Carne</a></li>
+              <li><a href="#">Fruta</a></li>
+              <li><a href="#">Verdura</a></li>
+              <li><a href="#">Panadería</a></li>
+              <li><a href="#">Droguería</a></li>
+              <li><a href="#">Higiene</a></li>
+            </ul>
+          </div>
+          <div class="filters">
+            <h6>Filtros</h6>
+            <div class="season">
+              <label for="temporada">Temporada</label>
+              <select name="temporada" id="">
+                <option value="todas" selected>Todas</option>
+                <option value="invierno">Invierno</option>
+                <option value="primavera">Primavera</option>
+                <option value="verano">Verano</option>
+                <option value="otoño">Otoño</option>
+              </select>
+            </div>
+            <div class="season">
+              <label for="productor">Productor</label>
+              <select name="productor" id="">
+                <option value="todos" selected>Todos</option>
+                <option value="ramon">Ramón Bilbao</option>
+                <option value="mariaAntonia">Maria Antònia Romeu</option>
+                <option value="pere">Pere Pons</option>
+                <option value="oliver">Oliver Fernández</option>
+                <option value="enric">Enric Bel</option>
+                <option value="joana">Joana Mercedes</option>
+              </select>
+            </div>
+          </div>
+        </aside>
+        <div class="products-wrapper">
+          <div class="product-thumbnail">
+            <div class="product-info">
+              <a href="#">Ver ficha</a>
+              <h3>Escarola Baby tierna</h3>
+              <img src="./images/products/acelgas_1000px.jpg" alt="Imagen de las acelgas de la temporada"/>
+            </div>
+            <div class="product-action">
+              <div class="product-buy" role="button">
+                <p><i class="fa-solid fa-cart-plus"></i></p>
+              </div>
+              <p>3,66€/Kg</p>
+            </div>
+          </div>
+          <div class="product-thumbnail">
+            <div class="product-info">
+              <a href="#">Ver ficha</a>
+              <h3>Pimientos temporada</h3>
+              <img src="./images/products/pimientos_1000px.jpg" alt="Imagen de los pimientos de temporada"/>
+            </div>
+            <div class="product-action">
+              <div class="product-buy" role="button">
+                <p><i class="fa-solid fa-cart-plus"></i></p>
+              </div>
+              <p>23,9€/Kg</p>
+            </div>
+          </div>
+          <div class="product-thumbnail">
+            <div class="product-info">
+              <a href="#">Ver ficha</a>
+              <h3>Judías verdes</h3>
+              <img src="./images/products/judia_1000px.jpg" alt="Imagen de las judías de temporada"/>
+            </div>
+            <div class="product-action">
+              <div class="product-buy" role="button">
+                <p><i class="fa-solid fa-cart-plus"></i></p>
+              </div>
+              <p>23,9€/Kg</p>
+            </div>
+          </div>
+          <div class="product-thumbnail">
+            <div class="product-info">
+              <a href="#">Ver ficha</a>
+              <h3>Ajos de llançà</h3>
+              <img src="./images/products/ajos_1000px.jpg" alt="Imagen de ajos de llançà"/>
+            </div>
+            <div class="product-action">
+              <div class="product-buy" role="button">
+                <p><i class="fa-solid fa-cart-plus"></i></p>
+              </div>
+              <p>23,9€/Kg</p>
+            </div>
+          </div>
+          <div class="product-thumbnail">
+            <div class="product-info">
+              <a href="#">Ver ficha</a>
+              <h3>Berenjenas francesas</h3>
+              <img src="./images/products/berenjena_1000px.jpg" alt="Imagen de la cosecha de berengenas"/>
+            </div>
+            <div class="product-action">
+              <div class="product-buy" role="button">
+                <p><i class="fa-solid fa-cart-plus"></i></p>
+              </div>
+              <p>23,9€/Kg</p>
+            </div>
+          </div>
+          <div class="product-thumbnail">
+            <div class="product-info">
+              <a href="#">Ver ficha</a>
+              <h3>Calabacines de la huerta</h3>
+              <img src="./images/products/calabacines_1000px.jpg" alt="Imagen de grupo de calabacines"/>
+            </div>
+            <div class="product-action">
+              <div class="product-buy" role="button">
+                <p><i class="fa-solid fa-cart-plus"></i></p>
+              </div>
+              <p>23,9€/Kg</p>
+            </div>
+          </div>
+          <div class="product-thumbnail">
+            <div class="product-info">
+              <a href="#">Ver ficha</a>
+              <h3>Cebollas de Figueres</h3>
+              <img src="./images/products/cebollas_1000px.jpg" alt="Imagen de cebollas de Figueres"/>
+            </div>
+            <div class="product-action">
+              <div class="product-buy" role="button">
+                <p><i class="fa-solid fa-cart-plus"></i></p>
+              </div>
+              <p>23,9€/Kg</p>
+            </div>
+          </div>
+          <div class="product-thumbnail">
+            <div class="product-info">
+              <a href="#">Ver ficha</a>
+              <h3>Tomates de rama</h3>
+              <img src="./images/products/tomates.jpg" alt="Imagen de la cosecha de tomates de la temporada"/>
+            </div>
+            <div class="product-action">
+              <div class="product-buy" role="button">
+                <p><i class="fa-solid fa-cart-plus"></i></p>
+              </div>
+              <p>23,9€/Kg</p>
+            </div>
+          </div>
+          <div class="product-thumbnail">
+            <div class="product-info">
+              <a href="#">Ver ficha</a>
+              <h3>Espárragos verdes</h3>
+              <img src="./images/products/esparragos_1000px.jpg" alt="Imagen de un par de manojos de espárragos"/>
+            </div>
+            <div class="product-action">
+              <div class="product-buy" role="button">
+                <p><i class="fa-solid fa-cart-plus"></i></p>
+              </div>
+              <p>23,9€/Kg</p>
+            </div>
+          </div>
+          <div class="product-thumbnail">
+            <div class="product-info">
+              <a href="#">Ver ficha</a>
+              <h3>Lechuga Iceberg</h3>
+              <img src="./images/products/col_1000px.jpg" alt="Imagen de la lechuga iceberg de esta temporada"/>
+            </div>
+            <div class="product-action">
+              <div class="product-buy" role="button">
+                <p><i class="fa-solid fa-cart-plus"></i></p>
+              </div>
+              <p>23,9€/Kg</p>
+            </div>
+          </div>
+          <div class="product-thumbnail">
+            <div class="product-info">
+              <a href="#">Ver ficha</a>
+              <h3>Patatas blancas</h3>
+              <img src="./images/products/patatas_1000px.jpg" alt="Imagen de la cosecha de patatas de Ramón Bilbao"/>
+            </div>
+            <div class="product-action">
+              <div class="product-buy" role="button">
+                <p><i class="fa-solid fa-cart-plus"></i></p>
+              </div>
+              <p>23,9€/Kg</p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
