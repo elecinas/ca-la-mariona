@@ -170,7 +170,7 @@ option {
   margin: 0 auto 39px auto;
 }
 
-.white-section>.secondary-button {
+.white-section > .secondary-button {
   margin: 39px auto 0px auto;
 }
 
@@ -191,7 +191,7 @@ header {
   align-items: center;
 }
 
-.header-menu-1>* {
+.header-menu-1 > * {
   min-height: 48px;
 }
 
@@ -245,10 +245,10 @@ header {
 }
 
 .header-menu-2 i {
-  font-size: .5rem;
+  font-size: 0.5rem;
   font-weight: bolder;
-  padding-top: .5rem;
-  padding-left: .5rem;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
 }
 
 .shown {
@@ -268,7 +268,7 @@ header {
 }
 
 .logo {
-  margin-top: .2rem;
+  margin-top: 0.2rem;
   width: 160px;
 }
 
@@ -404,18 +404,18 @@ header {
   position: relative;
 }
 
-.card-slider>div:nth-child(2),
-.card-slider>div:nth-child(3) {
+.card-slider > div:nth-child(2),
+.card-slider > div:nth-child(3) {
   display: none;
 }
 
-.card-slider>a {
+.card-slider > a {
   display: block;
   position: absolute;
   top: 50%;
 }
 
-.card-slider>a:last-child {
+.card-slider > a:last-child {
   right: 0px;
 }
 
@@ -443,7 +443,7 @@ header {
 
 /* CARD GRID */
 
-.card-grid>* {
+.card-grid > * {
   margin: 3rem auto;
 }
 
@@ -467,7 +467,7 @@ header {
   justify-content: space-between;
 }
 
-.thumbnail>* {
+.thumbnail > * {
   color: #fff;
 }
 
@@ -476,15 +476,15 @@ header {
   line-height: 20px;
 }
 
-.thumbnail-slider>div:nth-child(2) {
+.thumbnail-slider > div:nth-child(2) {
   background-color: #8aa091;
 }
 
-.thumbnail-slider>div:nth-child(3) {
+.thumbnail-slider > div:nth-child(3) {
   background-color: var(--secondary-color-40);
 }
 
-.thumbnail-slider>div:nth-child(4) {
+.thumbnail-slider > div:nth-child(4) {
   background-color: var(--secondary-color);
 }
 
@@ -505,7 +505,7 @@ header {
 
 .product-thumbnail .product-info a,
 .product-thumbnail .product-info h3 {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -514,8 +514,8 @@ header {
   font-size: 16px;
   display: block;
   position: absolute;
-  top: .5rem;
-  left: .5rem;
+  top: 0.5rem;
+  left: 0.5rem;
 }
 
 .product-thumbnail .product-info h3 {
@@ -524,7 +524,7 @@ header {
   line-height: 26px;
   position: absolute;
   top: 50%;
-  left: .5rem;
+  left: 0.5rem;
 }
 
 .product-thumbnail img {
@@ -587,8 +587,8 @@ header {
   background-color: var(--secondary-color-20);
 }
 
-.products-nav .category>*:not(h6),
-.products-nav .filters>*:not(h6) {
+.products-nav .category > *:not(h6),
+.products-nav .filters > *:not(h6) {
   display: none;
 }
 
@@ -608,7 +608,7 @@ footer {
   gap: 6rem;
 }
 
-footer>* {
+footer > * {
   margin: auto;
 }
 
@@ -637,8 +637,6 @@ footer a {
 
 /* Estilos para tablet */
 @media (min-width: 768px) {
-
-
   .search input {
     width: unset;
   }
@@ -693,7 +691,7 @@ footer a {
     margin-top: 1rem;
   }
 
-  .white-section>.secondary-button {
+  .white-section > .secondary-button {
     margin: 75px auto 0px auto;
   }
 
@@ -773,7 +771,7 @@ footer a {
   }
 
   .header-menu-2 i {
-    font-size: .7rem;
+    font-size: 0.7rem;
     padding-top: unset;
     padding-left: unset;
   }
@@ -790,7 +788,6 @@ footer a {
   }
 
   /* CAROUSEL */
-
 
   .hero {
     background-image: url("../images/hero_img_socis_xl.jpg");
@@ -816,7 +813,8 @@ footer a {
     align-items: flex-start;
   }
 
-  .carousel-slide-information .primary-button {
+  .carousel-slide-information .primary-button,
+  .hero-information .primary-button {
     margin: unset;
   }
 
@@ -825,8 +823,8 @@ footer a {
     flex-direction: row;
   }
 
-  .card-slider>div:nth-child(2),
-  .card-slider>div:nth-child(3) {
+  .card-slider > div:nth-child(2),
+  .card-slider > div:nth-child(3) {
     display: block;
   }
 
@@ -858,7 +856,6 @@ footer a {
     display: block;
     flex-basis: 50%;
   }
-
 
   /* PRODUCTS CONTAINER */
 
@@ -923,8 +920,8 @@ footer a {
     flex-direction: column;
   }
 
-  .products-nav .category>*:not(h6),
-  .products-nav .filters>*:not(h6) {
+  .products-nav .category > *:not(h6),
+  .products-nav .filters > *:not(h6) {
     display: block;
   }
 
@@ -935,13 +932,14 @@ footer a {
   .filters h6,
   .filters .season label,
   .filters .season select {
-    margin-bottom: .7em;
+    margin-bottom: 0.7em;
   }
 
-  .category h6, .filters h6 {
+  .category h6,
+  .filters h6 {
     font-family: "Titillium Web", sans-serif;
     border-bottom: 1px solid #000;
-    padding-bottom: .3em;
+    padding-bottom: 0.3em;
   }
 
   /* FOOTER */
