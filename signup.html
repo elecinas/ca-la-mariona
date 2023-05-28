@@ -104,8 +104,101 @@
       <section class="white-section principal">
         <h1 class="page-title">¡Bienvenid@!</h1>
         <p class="page-text">
-            Es importante que leas atentamente los requisitos para ser socio antes de rellenar el formulario que hay a continuación.
+          Es importante que leas atentamente los requisitos para ser socio antes
+          de rellenar el formulario que hay a continuación.
         </p>
+        <ul class="signup-list">
+          <li>Estar empadronado en Cerdanyola del Vallés.</li>
+          <li>Pagar una cuota anual de 200 euros.</li>
+          <li>
+            Participar en las actividades de la cooperativa un mínimo de 4 horas
+            al mes.
+          </li>
+        </ul>
+      </section>
+      <section class="form-section">
+        <div class="form-wrapper">
+          <h2 class="form-title">Formulario de inscripción para socios</h2>
+          <form action="procesar_formulario.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Johanna"
+              required
+            />
+
+            <label for="apellidos">Apellidos:</label>
+            <input
+              type="text"
+              id="apellidos"
+              name="apellidos"
+              placeholder="Doe Doe"
+              required
+            />
+
+            <label for="telefono">Teléfono:</label>
+            <input
+              type="tel"
+              id="telefono"
+              name="telefono"
+              placeholder="+34 690 690 690"
+              required
+            />
+
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="ejemplo@dominio.com"
+              required
+            />
+
+            <label for="dni">DNI:</label>
+            <input
+              type="text"
+              id="dni"
+              name="dni"
+              placeholder="999999999w"
+              required
+            />
+
+            <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+            <input
+              type="date"
+              id="fecha_nacimiento"
+              name="fecha_nacimiento"
+              required
+            />
+
+            <fieldset>
+              <legend>Horario de disponibilidad</legend>
+
+              <label for="hora_entrada">Hora de entrada:</label>
+              <select id="hora_entrada" name="hora_entrada" required>
+                <option value="">Seleccionar hora de entrada</option>
+                <option value="09:00">09:00</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+              </select>
+
+              <label for="hora_salida">Hora de salida:</label>
+              <select id="hora_salida" name="hora_salida" required>
+                <option value="">Seleccionar hora de salida</option>
+                <option value="17:00">17:00</option>
+                <option value="18:00">18:00</option>
+                <option value="19:00">19:00</option>
+              </select>
+            </fieldset>
+
+            <label for="sugerencias">Dudas/Comentarios/Sugerencias:</label>
+            <textarea id="sugerencias" name="sugerencias"></textarea>
+
+            <button class="primary-button" type="submit">Enviar</button>
+          </form>
+        </div>
       </section>
     </main>
     <footer>

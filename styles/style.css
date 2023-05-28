@@ -5,6 +5,7 @@
   --secondary-color-20: #ebdfd3;
   --accent-color-1: #9cbd2c;
   --accent-color-2: #dfb967;
+  --accent-color-2-30: #f5ead1;
 }
 
 * {
@@ -32,13 +33,15 @@ a {
 }
 
 input,
-select {
-  height: 2rem;
+select,
+textarea {
+  min-height: 2.5rem;
   background: #fff;
   border-width: 1px 1px 4px 1px;
   border-style: solid;
   border-color: var(--primary-color);
   border-radius: 3px;
+  padding: 0 .5rem;
 }
 
 option {
@@ -159,6 +162,7 @@ option {
 }
 
 .page-text {
+  font-size: 20px;
   margin: 0 auto;
   max-width: 580px;
   text-align: center;
@@ -596,6 +600,74 @@ header {
   font-size: 16px;
 }
 
+/* SIGN UP PAGE */
+
+.signup-list{
+  margin: 50px auto 0px auto;
+  border-left: 3px solid var(--accent-color-2);
+  padding-left: 10px;
+  max-width: 420px;
+}
+
+.signup-list li::before {
+  content: "# ";
+  font-weight: bold;
+}
+
+.form-section {
+  background-color: var(--accent-color-2-30);
+  padding: 1rem;
+}
+
+.form-section .form-title {
+  color: var(--primary-color);
+  font-size: 32px;
+  line-height: 35px;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 40px;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-section form label {
+  font-weight: bold;
+  margin-bottom: .2rem;
+}
+
+.form-section form input {
+  margin-bottom: 1rem;
+}
+
+.form-section form fieldset {
+  border-width: 0px;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.form-section form fieldset label {
+  font-weight: normal;
+}
+
+.form-section form fieldset select {
+  margin-bottom: 1rem;
+}
+
+.form-section form textarea {
+  min-height: 12rem;
+}
+
+.form-section form button {
+  width: 100%;
+  border-width: 0;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
 /* FOOTER */
 
 footer {
@@ -940,6 +1012,18 @@ footer a {
     font-family: "Titillium Web", sans-serif;
     border-bottom: 1px solid #000;
     padding-bottom: 0.3em;
+  }
+
+  /* SIGN UP PAGE */
+
+  .form-section {
+    max-width: 980px;
+    margin: 0 auto 100px auto;
+  }
+
+  .form-section .form-wrapper {
+    max-width: 580px;
+    margin: 2rem auto;
   }
 
   /* FOOTER */
