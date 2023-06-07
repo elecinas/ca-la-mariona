@@ -4,8 +4,8 @@
 
 // const menuPrincipal = document.getElementById("menu");
 
-function showMenu(menuPrincipal) {
-  menuPrincipal.classList.contains("shown")
-    ? menuPrincipal.classList.remove("shown")
-    : menuPrincipal.classList.add("shown");
+function showMenu(item, className) {
+  item.classList.contains(className)
+    ? item.classList.remove(className)
+    : item.classList.add(className);
 }

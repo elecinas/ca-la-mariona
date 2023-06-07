@@ -51,7 +51,7 @@
           </a>
         </div>
         <div class="hamburger">
-          <a href="#" onclick="showMenu(document.getElementById('menu'))"
+          <a href="#" onclick="showMenu(document.getElementById('menu'), 'd-block')"
             ><i class="fa-solid fa-bars"></i
           ></a>
         </div>
@@ -65,9 +65,9 @@
                 title="Enlace a la página principal de la cooperativa"
                 >Cooperativa</a
               >
-              <i class="fa-solid fa-chevron-up"></i
+              <i class="fa-solid fa-chevron-up" onclick="showMenu(document.getElementById('submenu'), 'd-flex')"></i
             ></span>
-            <ul class="submenu">
+            <ul id="submenu" class="submenu">
               <li><a href="#">Quienes somos</a></li>
               <li><a href="#">Qué hacemos</a></li>
               <li><a href="#">Cómo funciona</a></li>
