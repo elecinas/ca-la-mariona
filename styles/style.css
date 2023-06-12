@@ -367,7 +367,7 @@ header {
 
 .carousel-slide-information h3,
 .carousel-slide-information p,
-.hero-information h3,
+.hero-information h1,
 .hero-information p {
   color: #fff;
   text-align: center;
@@ -375,7 +375,7 @@ header {
 }
 
 .carousel-slide-information h3,
-.hero-information h3 {
+.hero-information h1 {
   font-weight: bold;
   font-size: 32px;
   line-height: 36px;
