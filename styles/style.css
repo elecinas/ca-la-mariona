@@ -606,6 +606,18 @@ header {
   right: 16px;
 }
 
+.products-nav .search::before {
+  content: "";
+  background-image: url("../images/icons/lupa.svg");
+  min-height: 1rem;
+  min-width: 1rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: .5rem;
+  fill: var(--primary-color);
+}
+
 .products-nav .category,
 .products-nav .filters {
   flex-basis: 50%;
