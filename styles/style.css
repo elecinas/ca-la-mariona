@@ -865,6 +865,10 @@ footer a {
     display: block;
   }
 
+  .header-menu-2 ul li:hover {
+    background-color: var(--secondary-color-20);
+  }
+
   .header-menu-2 ul li a,
   .header-menu-2 ul li i {
     color: #000;
@@ -876,10 +880,15 @@ footer a {
     padding-left: unset;
   }
 
+  .header-menu-2 ul li { 
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   .header-menu-2 li.dropdown {
     position: relative;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
   
   .header-menu-2 li.dropdown span {
@@ -893,8 +902,9 @@ footer a {
     position: absolute;
     bottom: unset;
     top: 54px;
+    left: -1px;
     margin-top: 0px;
-    width: 200px;
+    width: 143px;
     z-index: 20000;
   }
 
