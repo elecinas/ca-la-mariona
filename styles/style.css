@@ -477,7 +477,7 @@ header {
   gap: 1rem;
 }
 
-.card h4 {
+.card h3 {
   font-size: 24px;
   line-height: 27px;
   color: var(--primary-color);
