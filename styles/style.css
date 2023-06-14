@@ -434,6 +434,10 @@ header {
   opacity: 1;
 }
 
+.carousel-control-text {
+  visibility: hidden;
+}
+
 /* CARD SLIDER */
 
 .card-slider {
