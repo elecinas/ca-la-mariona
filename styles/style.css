@@ -513,7 +513,7 @@ header {
   color: #fff;
 }
 
-.thumbnail h6 {
+.thumbnail h3 {
   font-size: 18px;
   line-height: 20px;
 }
@@ -1009,7 +1009,7 @@ footer a {
     height: 208px;
   }
 
-  .thumbnail h6 {
+  .thumbnail h3 {
     font-size: 26px;
     line-height: 28px;
     display: block;
