@@ -498,7 +498,7 @@ header {
 .thumbnail {
   width: 136px;
   height: 136px;
-  background-color: var(--accent-color-1);
+  background-color: #69840e;
   padding: 10px;
   display: flex;
   flex-direction: column;
