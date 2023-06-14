@@ -374,6 +374,11 @@ header {
   text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.75);
 }
 
+.carousel-slide-information p,
+.hero-information p {
+  font-size: 1.2rem;
+}
+
 .carousel-slide-information h3,
 .hero-information h1 {
   font-weight: bold;
