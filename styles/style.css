@@ -4,7 +4,7 @@
   --secondary-color: #be7526;
   --secondary-color-40: #d5c0a5;
   --secondary-color-20: #ebdfd3;
-  --accent-color-1: #7e9a21; /* originalmente: #9cbd2c; cambiado por accesibilidad*/
+  --accent-color-1: #9cbd2c; /* originalmente: #9cbd2c; cambiado por accesibilidad*/
   --accent-color-2: #dfb967;
   --accent-color-2-30: #f5ead1;
 }
@@ -92,7 +92,7 @@ option {
 
 .cta {
   display: block;
-  background-color: var(--accent-color-1);
+  background-color: var(--primary-color);
   font-family: "Oswald", sans-serif;
   font-size: 1.2rem;
   color: #fff;
@@ -519,7 +519,7 @@ header {
 }
 
 .thumbnail-slider > div:nth-child(3) {
-  background-color: #a5937c;
+  background-color: #776a59;
 }
 
 .thumbnail-slider > div:nth-child(4) {
