@@ -366,7 +366,7 @@ header {
   gap: 1rem;
 }
 
-.carousel-slide-information h3,
+.carousel-slide-information h2,
 .carousel-slide-information p,
 .hero-information h1,
 .hero-information p {
@@ -381,7 +381,7 @@ header {
   line-height: 1.8rem;
 }
 
-.carousel-slide-information h3,
+.carousel-slide-information h2,
 .hero-information h1 {
   font-weight: bold;
   font-size: 38px;
@@ -956,9 +956,9 @@ footer a {
     height: calc(100vh - 127px);
   }
 
-  .carousel-slide-information h3,
+  .carousel-slide-information h2,
   .carousel-slide-information p,
-  .hero-information h3,
+  .hero-information h2,
   .hero-information p {
     text-align: left;
   }
