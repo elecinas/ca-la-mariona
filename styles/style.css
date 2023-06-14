@@ -515,11 +515,11 @@ header {
 }
 
 .thumbnail-slider > div:nth-child(2) {
-  background-color: #8aa091;
+  background-color: #627368;
 }
 
 .thumbnail-slider > div:nth-child(3) {
-  background-color: var(--secondary-color-40);
+  background-color: #a5937c;
 }
 
 .thumbnail-slider > div:nth-child(4) {
