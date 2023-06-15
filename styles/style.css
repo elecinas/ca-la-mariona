@@ -646,7 +646,7 @@ header {
   display: none;
 }
 
-.products-nav h6 {
+.products-nav h3 {
   font-size: 16px;
 }
 
@@ -1086,16 +1086,16 @@ footer a {
 
   /* espaciado entre elementos del nav: */
   .search,
-  .category h6,
+  .category h3,
   .category ul li,
-  .filters h6,
+  .filters h3,
   .filters .season label,
   .filters .season select {
     margin-bottom: 0.7em;
   }
 
-  .category h6,
-  .filters h6 {
+  .category h3,
+  .filters h3 {
     font-family: "Titillium Web", sans-serif;
     border-bottom: 1px solid #000;
     padding-bottom: 0.3em;
