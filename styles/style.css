@@ -641,8 +641,8 @@ header {
   background-color: var(--secondary-color-20);
 }
 
-.products-nav .category > *:not(h6),
-.products-nav .filters > *:not(h6) {
+.products-nav .category > *:not(h2),
+.products-nav .filters > *:not(h2) {
   display: none;
 }
 
